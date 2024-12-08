@@ -1,0 +1,1145 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+.parallax-snow {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+body {
+  display: flex;
+  /*show the body in 4 parts*/
+  flex-direction: column;
+  /*fix the body and show de pag like the start*/
+  min-height: 100vh;
+  /*help the body to fit the entire page --> go to the footer*/
+  background-image: url(../img/europe.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  padding: 2%;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10%;
+  text-shadow: 0px 0px 50px gold;
+}
+
+.tittle {
+  width: 100%;
+  padding: 2%;
+  justify-content: center;
+}
+
+.info {
+  padding: 5%;
+}
+
+.introduction {
+  flex-direction: row;
+  padding: 5%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(244, 233, 187, 0.792);
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+/*------------- START Menu SMALL----------*/
+.button {
+  display: none;
+}
+
+.text {
+  flex-direction: row;
+  padding: 5%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #440202;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+p {
+  text-align: justify;
+  font-size: 0, 5em;
+  flex-shrink: initial;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home {
+  flex-wrap: wrap;
+  height: auto;
+  width: auto;
+  background-color: rgba(244, 232, 232, 0.861);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home img {
+  width: 55vh;
+  height: 35vh;
+  object-fit: cover;
+}
+
+.home p {
+  color: #250804;
+  text-align: center;
+  padding: 2%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text p {
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+}
+
+/*----------END MENU SMALL--------*/
+
+/*---------START-PARALLAX ---------*/
+.item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 40vh;
+  flex-direction: row;
+}
+
+.parallax-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 3% 0;
+  position: absolute;
+  flex-direction: row;
+  top: 65vh;
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+  will-change: transform;
+  transition: transform 0.9s ease-out;
+  will-change: scroll-position;
+  z-index: 1;
+}
+
+/*--------------------END-PARALLAX-------------*/
+/*---------HEADER...............................*/
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 20;
+  width: 100%;
+  display: flex;
+  padding: 0%;
+  background-color: #250804;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+}
+
+header .link-page {
+  width: 100%;
+  background-color: rgb(50, 15, 0);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2%;
+  z-index: 10;
+}
+
+.link-page img {
+  width: 2vh;
+  height: 2vh;
+}
+
+.menu a {
+  color: aliceblue;
+  font-size: 0.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.5s ease all;
+}
+
+.menu {
+  background-color: rgba(50, 15, 0);
+  padding-left: 4vh;
+  padding-right: 4vh;
+  justify-content: space-evenly;
+}
+
+.home img:hover {
+  border: rgba(27, 76, 4, 0.858);
+  border-width: 1px;
+  border-style: groove;
+}
+
+.menu:hover {
+  background-color: rgba(137, 16, 10, 0.543);
+}
+
+/*-------------HEADER-----------------------------*/
+
+/*------------ START SECTION------------*/
+.box {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* Extra small devices (phones, 600px and down)  [400-600]-----------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+  .parallax-snow {
+    height: 40vh;
+  }
+
+  /*----------------------BUTTON-----------------------------------------------*/
+  .button {
+    position: sticky;
+    top: 0px;
+    left: 5vw;
+    position: fixed;
+    display: block;
+    z-index: 5;
+  }
+
+  .button {
+    background-color: #3c0501f8;
+    color: #f6f5f5;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .dropdown-content {
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    z-index: 6;
+    min-width: 200px;
+    background-color: #510e0e;
+    border: 2px solid #b23b3b;
+    border-radius: 0px 15px 15px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(159, 62, 62, 0.77);
+  }
+
+  .dropdown-content a {
+    color: #e5b9b9;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #450101;
+    color: #fffcfc;
+  }
+
+  .dropdown-content a:focus {
+    background-color: #6d0e0e;
+    color: #3f0000;
+  }
+
+  .dropdown-content #top:hover {
+    border-radius: 0px 13px 0px 0px;
+  }
+
+  .dropdown-content #bottom:hover {
+    border-radius: 0px 0px 13px 13px;
+  }
+
+  .button:hover button {
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .button:hover .dropdown-content {
+    display: block;
+  }
+
+  /*----------------------BUTTON---------------------------------------*/
+
+  h1 {
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    padding: 10%;
+    text-shadow: 0px 0px 50px rgb(247, 245, 245);
+  }
+
+  .city {
+    align-self: center;
+    font-size: 3em;
+  }
+
+  .introduction {
+    background-color: rgba(244, 203, 187, 0.792);
+  }
+
+  .home {
+    background-color: rgba(244, 232, 232, 0.92);
+  }
+
+  /*---------START-PARALLAX ---------*/
+  .item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 30vh;
+  }
+
+  .parallax-img {
+    flex-direction: column;
+    top: 20vh;
+    width: 100%;
+    height: 40vh;
+  }
+
+  /*------END-PARALLAX-------------*/
+  /*menu.........................................................*/
+  header {
+    display: none;
+  }
+
+  /*menu.........................................................*/
+
+  /*body----------*/
+
+  .big-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-body {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .left-column {
+    flex-direction: column-reverse;
+  }
+
+  .rigth-column {
+    flex-direction: column;
+  }
+
+  .near {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .rigth-column .near img {
+    width: 28vw;
+    height: 15vw;
+  }
+
+  .box {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+
+  .i-column {
+    padding: 5%;
+  }
+
+  .home .main-body .box .i-column img {
+    width: 80vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .text-column {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tittle {
+    align-items: center;
+    max-width: 96%;
+    display: flex;
+    background-color: rgba(61, 9, 9, 0.429);
+  }
+
+  .tittle p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+  }
+
+  .rigth-column .tittle {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .info {
+    text-align: justify;
+    unicode-bidi: isolate;
+  }
+
+  .info p {
+    font-size: 15px;
+  }
+
+  .text p {
+    font-size: 1em;
+  }
+
+  /*--------start nigth------*/
+  .second-body {
+    flex-direction: column;
+    display: flex;
+    background-color: black;
+    font-size: 1.2em;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .box-1 p {
+    color: white;
+  }
+
+  .box-2 {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .home img {
+    width: 20vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  /*--------end nigth------*/
+  /*------------ START SECTION------------*/
+  /*body*/
+  /*startfooter.............................................*/
+  footer {
+    flex-direction: column;
+  }
+
+  footer a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: #f2302a;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #250804;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .a-footer {
+    padding: 10% 2%;
+    padding-bottom: 5%;
+    width: 100%;
+    justify-content: space-between;
+    align-self: flex-start;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .b-footer {
+    padding: 3%;
+  }
+
+  .c-footer {
+    padding-bottom: 10%;
+    color: rgba(255, 255, 255, 0.819);
+  }
+
+  .d-footer {
+    color: rgba(255, 255, 255, 0.768);
+    text-decoration: none;
+    object-fit: contain;
+    align-items: stretch;
+  }
+
+  .d-footer a {
+    color: rgba(255, 255, 255, 0.768)
+  }
+
+  /*------a-footer(news)-----*/
+  /*----------footer-botton------------*/
+  .footer-botton {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+
+  .owner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .owner p {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .contact {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icono {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px 30px;
+    gap: 20px;
+  }
+
+  footer .contact .icono img {
+    width: 5vh;
+    height: 5vh;
+  }
+
+  .icono img:hover {
+    opacity: 50%;
+  }
+
+  /*end footer...........................................*/
+  /*No changes section*/
+
+  .near {
+    background-color: #f6f5f500;
+  }
+
+  /*End section--------*/
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)-------------------------------------------- */
+@media only screen and (min-width: 600px) {
+
+  /*startfooter.............................................*/
+  footer {
+    flex-direction: column;
+  }
+
+  footer a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: #f2302a;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #250804;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .a-footer {
+    padding: 10% 2%;
+    padding-bottom: 5%;
+    width: 100%;
+    justify-content: space-between;
+    align-self: flex-start;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .b-footer {
+    padding: 3%;
+  }
+
+  .c-footer {
+    padding-bottom: 10%;
+    color: rgba(255, 255, 255, 0.819);
+  }
+
+  .d-footer {
+    color: rgba(255, 255, 255, 0.768);
+    text-decoration: none;
+    object-fit: contain;
+    align-items: stretch;
+  }
+
+  .d-footer a {
+    color: rgba(255, 255, 255, 0.768)
+  }
+
+  /*------a-footer(news)-----*/
+  /*----------footer-botton------------*/
+  .footer-botton {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+
+  .owner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .owner p {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .contact {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icono {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px 30px;
+    gap: 20px;
+  }
+
+  footer .contact .icono img {
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .icono img:hover {
+    opacity: 50%;
+  }
+
+  /*end footer...........................................*/
+
+
+  /*body----------*/
+  .home {
+
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .big-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-body {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-column {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rigth-column {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .near {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rigth-column .near img {
+    width: 28vw;
+    height: 15vw;
+  }
+
+  .box {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+
+  .i-column {
+    padding: 2%;
+    flex-direction: row;
+    display: flex;
+    box-sizing: content-box;
+  }
+
+  .home .main-body .box .i-column img {
+    width: 80vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .text-column {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tittle {
+    align-items: center;
+    max-width: 96%;
+    display: flex;
+    background-color: rgba(61, 9, 9, 0.429);
+  }
+
+  .tittle p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+  }
+
+  .rigth-column .tittle {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .info {
+    text-align: justify;
+    unicode-bidi: isolate;
+  }
+
+  .info p {
+    font-size: 15px;
+  }
+
+  .text p {
+    font-size: 1em;
+  }
+
+  /*--------start nigth------*/
+  .second-body {
+    flex-direction: column;
+    display: flex;
+    background-color: black;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box-1 p {
+    color: white;
+  }
+
+  .box-2 {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .home img {
+    width: 20vw;
+    height: 35vh;
+    object-fit: cover;
+  }
+
+  /*--------end nigth------*/
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) [ipad] air ------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  .parallax-snow {
+    position: relative;
+    height: 20vh;
+  }
+
+  .introduction {
+    padding: 8%;
+  }
+
+  .text p {
+    font-weight: lighter;
+    font-size: 2em;
+  }
+
+  /*---------START-PARALLAX ---------*/
+  .item {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .parallax-img {
+    flex-direction: column;
+    top: 20vh;
+  }
+
+  /*------END-PARALLAX-------------*/
+
+  /*menu.........................................................*/
+  header .link-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    margin: 0vw;
+    justify-content: center;
+  }
+
+  .menu a {
+    font-size: 1.5em;
+  }
+
+  /*menu.................................................*/
+
+  /*----------- START SECTION RESPONSIVE------------------*/
+
+  /*body----------*/
+  .city {
+    font-size: 2.5em;
+  }
+
+  .big-box {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .main-body {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-column {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+  }
+
+  .rigth-column {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .near {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .rigth-column .near img {
+    width: 30vw;
+    height: 13vw;
+  }
+
+  .box {
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .i-column {
+    padding: 2%;
+    flex-direction: row;
+    display: flex;
+    box-sizing: content-box;
+  }
+
+  .home .main-body .box .i-column img {
+    width: 73vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .text-column {
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tittle {
+    align-items: center;
+    max-width: 96%;
+    display: flex;
+    background-color: rgba(61, 9, 9, 0.429);
+  }
+
+  .tittle p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+  }
+
+  .rigth-column .tittle {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .info {
+    text-align: justify;
+    unicode-bidi: isolate;
+  }
+
+  .info p {
+    font-size: 19px;
+  }
+
+  .text p {
+    font-size: 1em;
+  }
+
+  /*--------start nigth------*/
+  .second-body {
+    flex-direction: column;
+    display: flex;
+    background-color: black;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box-1 p {
+    color: white;
+  }
+
+  .box-2 {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .home img {
+    width: 22vw;
+    height: 32vh;
+    object-fit: cover;
+  }
+
+  /*--------end nigth------*/
+  /*----------- END SECTION RESPONSIVE------------------*/
+
+  /*............START FOOTER.............................................*/
+  footer {
+    width: 100%;
+    padding: 20px 5%;
+    font-size: 8px;
+  }
+
+  .a-footer {
+    padding: 10% 2%;
+    padding-bottom: 5%;
+    width: 100%;
+    justify-content: space-between;
+    align-self: flex-start;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .b-footer {
+    padding: 6%;
+  }
+
+  .c-footer {
+    padding-bottom: 10%;
+    color: rgba(255, 255, 255, 0.819);
+  }
+
+  .d-footer {
+    color: rgba(255, 255, 255, 0.768);
+    text-decoration: none;
+    object-fit: contain;
+    align-items: stretch;
+  }
+
+  .d-footer a {
+    color: rgba(255, 255, 255, 0.768)
+  }
+
+  /*------a-footer(news)-----*/
+  /*----------footer-botton------------*/
+  .owner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .icono {
+    margin: 10px 20px 30px;
+    gap: 50px;
+  }
+
+  .a-footer {
+    width: 80%;
+    align-self: center;
+  }
+
+  .b-footer {
+    font-size: 16px;
+  }
+
+  footer .contact .icono img {
+    width: 7vh;
+    height: 7vh;
+  }
+
+  .icono img:hover {
+    opacity: 50%;
+  }
+
+  /*end footer...........................................*/
+}
+
+/* Large devices (laptops/desktops, 992px and up)---------------------------------------------------------- */
+@media only screen and (min-width: 992px) {
+  .a-footer {
+    width: 70%;
+    align-self: center;
+  }
+
+  .b-footer {
+    font-size: 8px;
+  }
+
+  .owner {
+    font-size: 9px;
+  }
+
+  .b-footer {
+    font-size: 18px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)--[1280-720]--------------------------------------- */
+@media only screen and (min-width: 1200px) {
+  .parallax-snow {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .introduction {
+    padding: 4%;
+  }
+
+  .introduction{
+    font-size: 1.5em;
+  }
+
+  .home .text p{
+    font-size: 1.8em;
+  }
+
+  .home .info p{
+    font-size: 1.5em;
+  }
+
+  .home p {
+    padding: 0.5%;
+  }
+
+  /*---------START-PARALLAX ---------*/
+  .parallax-img {
+    flex-direction: row;
+    top: 65vh;
+    width: 100%;
+    height: 20vh;
+  }
+
+  /*------END-PARALLAX-------------*/
+
+  /*menu.........................................................*/
+  header .link-page {
+    flex-direction: row;
+  }
+
+  .menu a {
+    font-size: 1.5em;
+  }
+
+  /*menu.........................................................*/
+  /*............START FOOTER.............................................*/
+
+  .a-footer {
+    width: 60%;
+    align-self: center;
+  }
+
+  .d-footer {
+    align-items: stretch;
+  }
+
+  /*------a-footer(news)-----*/
+  /*----------footer-botton------------*/
+  .footer-botton {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .owner {
+    flex-direction: column;
+    font-size: 2em;
+  }
+
+  .b-footer {
+    font-size: 2.5em;
+  }
+
+  .icono {
+    margin: 5% 5% 5%;
+    gap: 30px;
+  }
+
+  footer .contact .icono img {
+    width: 6vh;
+    height: 6vh;
+  }
+
+  /*end footer...........................................*/
+
+}
